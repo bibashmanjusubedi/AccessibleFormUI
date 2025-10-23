@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccesibleFormUI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section aria-labelledby="profile-form-title">
+            <h1 id="profile-form-title">Update Profile</h1>
+            <form>
+                <label for="fullname">Full Name</label>
+                <input id="fullname" placeholder="What should we call you?" type="text" required aria-required="true" autocomplete="name"/>
+                <label>Email</label>
+                <input placeholder="john@doe.com" />
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -6,16 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccesibleFormUI</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/80732d36bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <section aria-labelledby="profile-form-title">
             <h1 id="profile-form-title">Update Profile</h1>
-            <form>
-                <label for="fullname">Full Name</label>
-                <input id="fullname" placeholder="What should we call you?" type="text" required aria-required="true" autocomplete="name"/>
-                <label>Email</label>
-                <input placeholder="john@doe.com" />
+            <form aria-describedby="profile-completeness-title">
+                <div class="profile-left">
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" placeholder="What should we call you?" type="text" required aria-required="true" autocomplete="name"/>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="john@doe.com" aria-invalid="true" autocomplete="true" style="border-color:#d32f2f;color:d32f2f;" />
+                    <span>Email is already taken</span>
+
+                    <label for="password">Enter password:</label>
+                    <div class="input-icon-group">
+                        <input id="password" name="password" type="password" required aria-required="true" autocomplete="new-password" placeholder="xxxxxxxx" />
+                        <button>
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-icon-group">
+                        <input id="confirmPassword" name="confirmPassword" type="password" required aria-required="true" autocomplete="new-password" placeholder="xxxxxxx"/>
+                        <button>
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+
+                    <button>Submit</button>
+
+                </div>
+               
             </form>
         </section>
     </main>

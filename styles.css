@@ -15,3 +15,39 @@ section[aria-labelledby="profile-form-title"]{
   flex-direction: column;
   max-width: 800px;
 }
+
+form{
+  display:flex;
+  flex-direction: row;
+  gap:2.5rem;
+}
+
+.profile-left{
+  flex:1;
+  min-width: 320px;
+}
+
+label{
+  display:block;
+  margin-bottom: 0.4em;
+  font-size:1.2em;
+  font-weight: 500;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+  width:100%; /* or display:block*/
+}
+
+.input-icon-group{
+  display:flex;
+}
+
+.input-icon-group input{
+  flex:1;
+}
+
+.input-icon-group button{
+  margin-left: -2.3em;
+  border:none;
+  background: transparent;
+}
